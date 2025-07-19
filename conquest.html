@@ -15,7 +15,7 @@
     }
 
     .event-hero h1 {
-      font-size: 3rem;
+      font-size: 4.5rem;
       font-weight: 700;
       color: #00c389;
       margin-bottom: 20px;
@@ -35,9 +35,15 @@
 
     .event-info {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: 1fr 1fr;
       gap: 40px;
       margin-bottom: 60px;
+    }
+
+    .info-card:nth-child(3) {
+      grid-column: 1 / -1;
+      max-width: 500px;
+      margin: 0 auto;
     }
 
     .info-card {
@@ -142,15 +148,15 @@
     .register-section {
       text-align: center;
       padding: 60px 20px;
-      background: linear-gradient(135deg, #00c389 0%, #00a86b 100%);
-      color: white;
+      background: #f9f9f9;
+      color: #333;
       border-radius: 12px;
       margin: 40px 0;
     }
 
-    .register-btn {
-      background: white;
-      color: #00c389;
+    .back-home-btn {
+      background: #00c389;
+      color: white;
       padding: 15px 40px;
       border: none;
       border-radius: 8px;
@@ -160,8 +166,9 @@
       transition: transform 0.3s ease;
     }
 
-    .register-btn:hover {
+    .back-home-btn:hover {
       transform: translateY(-2px);
+      background: #00a86b;
     }
   </style>
 </head>
@@ -189,17 +196,17 @@
   <section class="event-details">
     <div class="event-info">
       <div class="info-card">
-        <h3>🎯 Competition Overview</h3>
+        <h3>Competition Overview</h3>
         <p>Real-world business problem statements crafted to reflect the complexity of actual consulting assignments</p>
       </div>
       
       <div class="info-card">
-        <h3>👥 Participation</h3>
+        <h3>Participation</h3>
         <p>400-500 students participate annually, making it one of the most engaging consulting events on campus</p>
       </div>
       
       <div class="info-card">
-        <h3>🏆 Format</h3>
+        <h3>Format</h3>
         <p>Multiple rigorous rounds with increasing complexity, filtering the most promising problem-solvers</p>
       </div>
     </div>
@@ -217,60 +224,60 @@
       <h2>Evaluation Parameters</h2>
       
       <div class="agenda-item">
-        <h4>🔍 Problem Structuring</h4>
+        <h4>Problem Structuring</h4>
         <p>How logically and efficiently the participants break down and approach the problem</p>
       </div>
       
       <div class="agenda-item">
-        <h4>📊 Market and Data Analysis</h4>
+        <h4>Market and Data Analysis</h4>
         <p>Ability to leverage data, draw insights, and support recommendations with evidence</p>
       </div>
       
       <div class="agenda-item">
-        <h4>🧠 Strategic Thinking</h4>
+        <h4>Strategic Thinking</h4>
         <p>Quality, feasibility, and impact of the solutions proposed</p>
       </div>
       
       <div class="agenda-item">
-        <h4>🎤 Presentation and Communication</h4>
+        <h4>Presentation and Communication</h4>
         <p>How effectively the ideas are communicated through slides and verbal delivery</p>
       </div>
     </div>
 
     <div class="why-participate">
-      <h2>🌟 Why Participate in Conquest?</h2>
+      <h2>Why Participate in Conquest?</h2>
       
       <div class="benefit-item">
-        <h4>🔍 Real Consulting Experience</h4>
+        <h4>Real Consulting Experience</h4>
         <p>Work on live-style business cases modeled after real consulting engagements</p>
       </div>
       
       <div class="benefit-item">
-        <h4>📈 Skill Development</h4>
+        <h4>Skill Development</h4>
         <p>Sharpen skills in problem-solving, structured thinking, market research, and storytelling with data</p>
       </div>
       
       <div class="benefit-item">
-        <h4>🧠 Peer Learning</h4>
+        <h4>Peer Learning</h4>
         <p>Collaborate with driven individuals and gain exposure to diverse approaches</p>
       </div>
       
       <div class="benefit-item">
-        <h4>🧾 CV Building</h4>
+        <h4>CV Building</h4>
         <p>A strong addition to your portfolio for consulting and business roles</p>
       </div>
       
       <div class="benefit-item">
-        <h4>🏆 Recognition & Rewards</h4>
+        <h4>Recognition & Rewards</h4>
         <p>Stand a chance to win exciting prizes, receive feedback from industry experts, and earn campus-wide recognition</p>
       </div>
     </div>
 
     <div class="register-section">
-      <h2>Ready to Test Your Strategic Thinking?</h2>
-      <p>Join 400+ students in this premier consulting competition. Register now!</p>
-      <button class="register-btn" onclick="window.open('mailto:share@iit.ac.in?subject=Conquest Registration', '_blank')">
-        Register Now
+      <h2>Explore More</h2>
+      <p>Learn more about our other initiatives and events</p>
+      <button class="back-home-btn" onclick="window.location.href='index.html'">
+        Back to Home
       </button>
     </div>
   </section>
