@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conquest - Consulting Bootcamp</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .event-hero {
+      padding: 120px 20px 60px;
+      text-align: center;
+      background: linear-gradient(135deg, #f8fff9 0%, #e8f5e8 100%);
+    }
+
+    .event-hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #00c389;
+      margin-bottom: 20px;
+    }
+
+    .event-hero .subtitle {
+      font-size: 1.5rem;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .event-details {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .event-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .info-card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      border-left: 4px solid #00c389;
+    }
+
+    .info-card h3 {
+      color: #00c389;
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+
+    .info-card p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .agenda-section {
+      background: #f9f9f9;
+      padding: 60px 20px;
+      border-radius: 12px;
+      margin: 40px 0;
+    }
+
+    .agenda-section h2 {
+      text-align: center;
+      color: #00c389;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .agenda-item {
+      background: white;
+      margin: 20px 0;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .agenda-item h4 {
+      color: #00c389;
+      margin-bottom: 10px;
+    }
+
+    .register-section {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #00c389 0%, #00a86b 100%);
+      color: white;
+      border-radius: 12px;
+      margin: 40px 0;
+    }
+
+    .register-btn {
+      background: white;
+      color: #00c389;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .register-btn:hover {
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/Society.png" alt="Society of Business Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="event-hero">
+    <h1>Conquest</h1>
+    <p class="subtitle">Consulting Bootcamp</p>
+    <p>Kickstart your consulting journey with industry experts and real case studies</p>
+  </section>
+
+  <section class="event-details">
+    <div class="event-info">
+      <div class="info-card">
+        <h3>📅 Date & Time</h3>
+        <p>July 15, 2025<br>9:00 AM - 6:00 PM</p>
+      </div>
+      
+      <div class="info-card">
+        <h3>📍 Venue</h3>
+        <p>Student Activity Centre<br>IIT Roorkee</p>
+      </div>
+      
+      <div class="info-card">
+        <h3>👥 Target Audience</h3>
+        <p>Students interested in consulting careers, case study solving, and strategic thinking</p>
+      </div>
+    </div>
+
+    <div class="agenda-section">
+      <h2>Event Agenda</h2>
+      
+      <div class="agenda-item">
+        <h4>9:00 AM - 10:30 AM: Introduction to Consulting</h4>
+        <p>Overview of the consulting industry, career paths, and what it takes to succeed</p>
+      </div>
+      
+      <div class="agenda-item">
+        <h4>10:45 AM - 12:15 PM: Case Study Fundamentals</h4>
+        <p>Learn the structured approach to solving business cases with hands-on practice</p>
+      </div>
+      
+      <div class="agenda-item">
+        <h4>1:15 PM - 2:45 PM: Industry Expert Panel</h4>
+        <p>Q&A session with consultants from top firms sharing their experiences</p>
+      </div>
+      
+      <div class="agenda-item">
+        <h4>3:00 PM - 4:30 PM: Mock Case Competition</h4>
+        <p>Put your skills to test in a competitive case-solving environment</p>
+      </div>
+      
+      <div class="agenda-item">
+        <h4>4:45 PM - 6:00 PM: Networking & Closing</h4>
+        <p>Connect with peers, mentors, and industry professionals</p>
+      </div>
+    </div>
+
+    <div class="register-section">
+      <h2>Ready to Begin Your Consulting Journey?</h2>
+      <p>Limited seats available. Register now to secure your spot!</p>
+      <button class="register-btn" onclick="window.open('mailto:share@iit.ac.in?subject=Conquest Registration', '_blank')">
+        Register Now
+      </button>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="assets/socbizLogo.png" alt="SB Logo" class="footer-logo" />
+        <p>Empowering students with the knowledge, skills, and network to thrive in the world of business and strategy.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-socials">
+        <h4>Follow us:</h4>
+        <div class="social-icons">
+          <a href="#"><img src="assets/linkedin.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="assets/Instagram.png" alt="Instagram" /></a>
+          <a href="#"><img src="assets/github.png" alt="GitHub" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
